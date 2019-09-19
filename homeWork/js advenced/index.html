@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="./jquery.lazy-master/jquery.lazy.min.js"></script>
+    <script src="./jquery.lazy-master/jquery.lazy.plugins.min.js"></script>
+    <style>
+      .text {
+        height: 5000px;
+      }
+    </style>
+  </head>
+  <body>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <img data-src="images/pic1.jpg" alt="" class="lazy"/>
+    <script>
+      $(function() {
+        $(".lazy").Lazy({
+                effect : "fadeIn",
+                threshold: 100,
+            });
+      });
+    </script>
+  </body>
+</html>

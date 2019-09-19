@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="ip" type="text" onKeyPress="edValueKeyPress()" /><br />
+    <span id="span">The text box contains: </span>
+  </body>
+  <script>
+    var type;
+    function edValueKeyPress() {
+      clearTimeout(type);
+      var ip = document.getElementById("ip");
+     type= setTimeout(function() {
+       var value = ip.value;
+        var span = document.getElementById("span");
+        span.innerText = "The text box contains: " + value;
+      }, 2000);
+
+      
+    }
+  </script>
+</html>
